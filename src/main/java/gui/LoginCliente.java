@@ -2,7 +2,7 @@ package gui;
 
 import javax.swing.*;
 
-public class loginCliente {
+public class LoginCliente {
     private JPanel panel1;
     private JLabel REGISTRAZIONE;
     private JButton eMailButton;
