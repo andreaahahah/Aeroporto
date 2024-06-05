@@ -64,7 +64,7 @@
         <properties>
           <font name="Times New Roman" size="16"/>
           <foreground color="-16777216"/>
-          <text value="password"/>
+          <text value="e-mail"/>
         </properties>
       </component>
       <component id="ed71" class="javax.swing.JCheckBox" binding="mostraPassword">
