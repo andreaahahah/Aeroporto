@@ -6,7 +6,7 @@ import java.awt.*;
 public class RegistrazioneCliente extends JFrame {
 
     private JPanel RegistrazionePanel;
-    private JButton aggiungiMetodoDiPagamentoButton;
+    private JButton avantiButton;
 
     public RegistrazioneCliente(){
         setContentPane(RegistrazionePanel);

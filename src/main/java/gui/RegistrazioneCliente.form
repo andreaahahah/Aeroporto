@@ -77,14 +77,14 @@
           <foreground color="-14061150"/>
         </properties>
       </component>
-      <component id="3cb31" class="javax.swing.JButton" binding="aggiungiMetodoDiPagamentoButton" default-binding="true">
+      <component id="3cb31" class="javax.swing.JButton" binding="avantiButton" default-binding="true">
         <constraints>
           <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties>
-          <text value="Aggiungi metodo di pagamento"/>
+          <text value="Avanti"/>
         </properties>
       </component>
       <component id="b887a" class="javax.swing.JLabel">
@@ -104,7 +104,7 @@
         <properties>
           <font name="Times New Roman" size="16"/>
           <foreground color="-16777216"/>
-          <text value="Codice Fiscale"/>
+          <text value="Nome"/>
         </properties>
       </component>
       <component id="be84c" class="javax.swing.JLabel">
@@ -114,7 +114,7 @@
         <properties>
           <font name="Times New Roman" size="16"/>
           <foreground color="-16777216"/>
-          <text value="Codice Fiscale"/>
+          <text value="Cognome"/>
         </properties>
       </component>
       <component id="eb33a" class="javax.swing.JLabel">
@@ -124,7 +124,7 @@
         <properties>
           <font name="Times New Roman" size="16"/>
           <foreground color="-16777216"/>
-          <text value="Codice Fiscale"/>
+          <text value="E-mail"/>
         </properties>
       </component>
       <component id="ce40b" class="javax.swing.JLabel">
@@ -134,7 +134,7 @@
         <properties>
           <font name="Times New Roman" size="16"/>
           <foreground color="-16777216"/>
-          <text value="Codice Fiscale"/>
+          <text value="Password"/>
         </properties>
       </component>
     </children>
