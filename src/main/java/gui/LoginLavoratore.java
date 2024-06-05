@@ -2,23 +2,21 @@ package gui;
 
 import javax.swing.*;
 
-public class LoginCliente {
+public class LoginLavoratore {
     private JPanel panel1;
     private JLabel REGISTRAZIONE;
-    private JCheckBox mostraPassword;
     private JTextField textField1;
+    private JCheckBox mostraPassword;
     private JPasswordField passwordField1;
     private JButton registratiButton;
     private JCheckBox mostraPasswordCheckBox;
 
-    public LoginCliente() {
+    public LoginLavoratore() {
 
     }
 
-    private void createUIComponents() {
-        // TODO: place custom component creation code here
-    }
     public static void main(String... args){
-        new LoginCliente();
+        new LoginLavoratore();
     }
 }
+
