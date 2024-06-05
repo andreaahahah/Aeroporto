@@ -6,6 +6,9 @@ import java.awt.*;
 public class House extends JFrame {
 
     private JPanel HousePanel;
+    private JButton registrazione;
+    private JButton loginU;
+    private JButton loginPersonale;
 
     public House(){
         setContentPane(HousePanel);
@@ -19,4 +22,7 @@ public class House extends JFrame {
     public static void main (String [] args){
         new House();
     }
+
+
+   
 }
