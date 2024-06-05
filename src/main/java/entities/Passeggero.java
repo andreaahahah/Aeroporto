@@ -1,12 +1,13 @@
 package entities;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 import java.util.Collection;
 
 @Data
 @Entity
-public class Passeggeri {
+public class Passeggero {
 
 //    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
