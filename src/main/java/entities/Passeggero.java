@@ -4,7 +4,6 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 import java.util.Collection;
-import java.util.List;
 
 @Data
 @Entity
@@ -25,9 +24,9 @@ public class Passeggero {
     private String email;
     @Basic
     @Column(name = "password", nullable = false)
-    private String password;
-
-    //private Collection<MetodoDiPagamento> metodoDiPagamentosByCf;
+    private int password;
     @OneToMany(mappedBy = "passeggeriByCfUtente")
-    private List<MetodoDiPagamento> metodoDiPagamentosByCf;
+    private Collection<MetodoDiPagamento> metodoDiPagamentosByCf;
+
+
 }
