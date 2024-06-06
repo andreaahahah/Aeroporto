@@ -38,8 +38,8 @@ public class RegistrazioneCliente extends JFrame {
                     campiVuoti.setVisible(true);
                 }
                 else {
-                    System.out.println("CF = " + CF + "\nNome = " + nome + "\nCognome = " + cognome + "\nEmail = " + email + "\nPassword = " + password);
-                    RegistrazioneMetodoDiPagamento regM = new RegistrazioneMetodoDiPagamento();
+
+                    RegistrazioneMetodoDiPagamento regM = new RegistrazioneMetodoDiPagamento(CF,nome,cognome,email,password);
                     regM.setVisible(true);
                     setVisible(false);
                 }
