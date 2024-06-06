@@ -1,9 +1,13 @@
 package gui;
 
+import apiService.ApiService;
+import org.json.JSONException;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 
 public class RegistrazioneMetodoDiPagamento extends JFrame{
     private JButton registraButton;
@@ -27,7 +31,7 @@ public class RegistrazioneMetodoDiPagamento extends JFrame{
         registraButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //TODO inserire il controllo dei dati
+                ApiService a = new ApiService();
                 String numero =  numeroCartaField.getText();
                 String tipo = tipologiaField.getText();
                 String limite = limiteTransazioneField.getText();
@@ -35,11 +39,17 @@ public class RegistrazioneMetodoDiPagamento extends JFrame{
                     campiVuoti.setVisible(true);
                 }
                 else {
+                    int numeroI =0, limiteI=0;
                     try{
-                    int numeroI = Integer.parseInt(numero);
-                    int limiteI = Integer.parseInt(limite);}
+                    numeroI = Integer.parseInt(numero);
+                    limiteI = Integer.parseInt(limite);}
                     catch(Exception ex){
                         campiVuoti.setVisible(true);
+                    }
+                    try{
+                        String response = a.createPasseggero(CF, nome, cognome, email, password, numeroI, tipo, limiteI);
+                    }catch (IOException | JSONException ioe){
+                        ioe.printStackTrace();
                     }
                     System.out.println("Numero Carta = " + numero + "\nTipologia = " + tipo + "\nLimite Transazione = " + limite);
                     LoginCliente logC = new LoginCliente();

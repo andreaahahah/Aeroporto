@@ -24,7 +24,7 @@ public class Passeggero {
     private String email;
     @Basic
     @Column(name = "password", nullable = false)
-    private int password;
+    private String password;
     @OneToMany(mappedBy = "passeggeriByCfUtente")
     private Collection<MetodoDiPagamento> metodoDiPagamentosByCf;
 
