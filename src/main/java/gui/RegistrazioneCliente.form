@@ -27,7 +27,7 @@
           <grid row="4" column="1" row-span="3" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
         </constraints>
       </vspacer>
-      <component id="21ca0" class="javax.swing.JTextField" default-binding="true">
+      <component id="21ca0" class="javax.swing.JTextField" binding="cognomeField">
         <constraints>
           <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="250" height="-1"/>
@@ -37,7 +37,7 @@
           <foreground color="-14061150"/>
         </properties>
       </component>
-      <component id="e93db" class="javax.swing.JTextField" default-binding="true">
+      <component id="e93db" class="javax.swing.JTextField" binding="cfField">
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="250" height="-1"/>
@@ -47,7 +47,7 @@
           <foreground color="-14061150"/>
         </properties>
       </component>
-      <component id="edd01" class="javax.swing.JTextField" default-binding="true">
+      <component id="edd01" class="javax.swing.JTextField" binding="nomeField">
         <constraints>
           <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="250" height="-1"/>
@@ -57,7 +57,7 @@
           <foreground color="-14061150"/>
         </properties>
       </component>
-      <component id="e77c9" class="javax.swing.JTextField" default-binding="true">
+      <component id="e77c9" class="javax.swing.JTextField" binding="emailField">
         <constraints>
           <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="250" height="-1"/>
@@ -67,7 +67,7 @@
           <foreground color="-14061150"/>
         </properties>
       </component>
-      <component id="3170b" class="javax.swing.JTextField" default-binding="true">
+      <component id="3170b" class="javax.swing.JTextField" binding="passwordField">
         <constraints>
           <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="250" height="-1"/>

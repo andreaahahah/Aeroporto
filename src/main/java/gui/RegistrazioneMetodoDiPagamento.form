@@ -22,7 +22,7 @@
           <text value="REGISTRAZIONE METODO DI PAGAMENTO"/>
         </properties>
       </component>
-      <component id="6e5fe" class="javax.swing.JTextField" binding="numeroCarta">
+      <component id="6e5fe" class="javax.swing.JTextField" binding="tipologiaField">
         <constraints>
           <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="250" height="-1"/>
@@ -30,7 +30,7 @@
         </constraints>
         <properties/>
       </component>
-      <component id="c8a8f" class="javax.swing.JTextField" binding="tipologia">
+      <component id="c8a8f" class="javax.swing.JTextField" binding="limiteTransazioneField">
         <constraints>
           <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="250" height="-1"/>
@@ -66,7 +66,7 @@
           <text value="Registra"/>
         </properties>
       </component>
-      <component id="480ee" class="javax.swing.JTextField" binding="limiteTransazione">
+      <component id="480ee" class="javax.swing.JTextField" binding="numeroCartaField">
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="250" height="-1"/>

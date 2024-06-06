@@ -25,13 +25,15 @@ public class LoginLavoratore extends JFrame {
         LOGINButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
-                        //TODO inserire il controllo dei dati
-                        HomeLavoratore HomeL= new HomeLavoratore();
-                        HomeL.setVisible(true);
-                        setVisible(false);
-                    }
-                });
+                //TODO inserire il controllo dei dati
+                String email = emialTextField.getText();
+                String password = PassowordField.getText();
+                System.out.println("email = "+email+" password = "+password);
+                HomeLavoratore HomeL= new HomeLavoratore();
+                HomeL.setVisible(true);
+                setVisible(false);
+            }
+        });
             }
 
     public static void main(String [] args){

@@ -26,6 +26,9 @@ public class LoginCliente extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //TODO inserire il controllo dei dati
+                String email = emialTextField.getText();
+                String password = PassowordField.getText();
+                System.out.println("email = "+email+" password = "+password);
                 HomeCliente HomeC= new HomeCliente();
                 HomeC.setVisible(true);
                 setVisible(false);

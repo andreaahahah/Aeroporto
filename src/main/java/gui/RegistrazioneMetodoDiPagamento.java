@@ -7,10 +7,11 @@ import java.awt.event.ActionListener;
 
 public class RegistrazioneMetodoDiPagamento extends JFrame{
     private JButton registraButton;
-    private JTextField numeroCarta;
-    private JTextField tipologia;
-    private JTextField limiteTransazione;
     private JPanel regMpanel;
+    private JTextField numeroCartaField;
+    private JTextField tipologiaField;
+    private JTextField limiteTransazioneField;
+
     public RegistrazioneMetodoDiPagamento(){
         setContentPane(regMpanel);
         setTitle("Aeroporto Lamezia Terme");
@@ -23,6 +24,10 @@ public class RegistrazioneMetodoDiPagamento extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 //TODO inserire il controllo dei dati
+                String numero = numeroCartaField.getText();
+                String tipo = tipologiaField.getText();
+                String limite = limiteTransazioneField.getText();
+                System.out.println("Numero Carta = " + numero + "\nTipologia = " + tipo + "\nLimite Transazione = " + limite);
                 LoginCliente logC= new LoginCliente();
                 logC.setVisible(true);
                 setVisible(false);

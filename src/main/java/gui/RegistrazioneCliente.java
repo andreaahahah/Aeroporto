@@ -9,6 +9,11 @@ public class RegistrazioneCliente extends JFrame {
 
     private JPanel RegistrazionePanel;
     private JButton avantiButton;
+    private JTextField cfField;
+    private JTextField nomeField;
+    private JTextField cognomeField;
+    private JTextField emailField;
+    private JTextField passwordField;
 
     public RegistrazioneCliente(){
         setContentPane(RegistrazionePanel);
@@ -22,6 +27,13 @@ public class RegistrazioneCliente extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //TODO inserire il controllo dei dati
+                String CF = cfField.getText();
+
+                String nome = nomeField.getText();
+                String cognome = cognomeField.getText();
+                String email = emailField.getText();
+                String password = passwordField.getText();
+                System.out.println("CF = " + CF + "\nNome = " + nome + "\nCognome = " + cognome + "\nEmail = " + email + "\nPassword = " + password);
                 RegistrazioneMetodoDiPagamento regM= new RegistrazioneMetodoDiPagamento();
                 regM.setVisible(true);
                 setVisible(false);
