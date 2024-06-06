@@ -48,10 +48,11 @@ public class RegistrazioneMetodoDiPagamento extends JFrame{
                     }
                     try{
                         String response = a.createPasseggero(CF, nome, cognome, email, password, numeroI, tipo, limiteI);
+                        System.out.println(response);
                     }catch (IOException | JSONException ioe){
                         ioe.printStackTrace();
                     }
-                    System.out.println("Numero Carta = " + numero + "\nTipologia = " + tipo + "\nLimite Transazione = " + limite);
+
                     LoginCliente logC = new LoginCliente();
                     logC.setVisible(true);
                     setVisible(false);

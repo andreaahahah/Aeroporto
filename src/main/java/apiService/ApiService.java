@@ -16,7 +16,8 @@ import java.io.IOException;
 
 public class ApiService {
 
-    private final String BASE_URL = "http://localhost:8080/api";
+     private final String BASE_URL = "http://localhost:8080/api";
+//    private final String BASE_URL = "postgresql://localhost:5432/postgres/api";
     public String createPasseggero(
             String cf,
             String nome,
