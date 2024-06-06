@@ -2,6 +2,8 @@ package gui;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class RegistrazioneCliente extends JFrame {
 
@@ -16,6 +18,15 @@ public class RegistrazioneCliente extends JFrame {
         setLocationRelativeTo(null);
         setVisible(true);
         getContentPane().setBackground(new Color(173, 216, 230));
+        avantiButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //TODO inserire il controllo dei dati
+                RegistrazioneMetodoDiPagamento regM= new RegistrazioneMetodoDiPagamento();
+                regM.setVisible(true);
+                setVisible(false);
+            }
+        });
     }
 
     public static void main(String... args){
