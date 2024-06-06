@@ -13,6 +13,7 @@ public class LoginCliente extends JFrame {
     private JPasswordField PassowordField;
     private JButton LOGINButton;
     private JCheckBox mostraPassword;
+    private JLabel campiVuoti;
 
     public LoginCliente() {
         setContentPane(LoginClientePanel);
@@ -20,6 +21,7 @@ public class LoginCliente extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(800, 700);
         setLocationRelativeTo(null);
+        campiVuoti.setVisible(false);
         setVisible(true);
         getContentPane().setBackground(new Color(173, 216, 230));
         LOGINButton.addActionListener(new ActionListener() {
@@ -28,10 +30,17 @@ public class LoginCliente extends JFrame {
                 //TODO inserire il controllo dei dati
                 String email = emialTextField.getText();
                 String password = PassowordField.getText();
-                System.out.println("email = "+email+" password = "+password);
-                HomeCliente HomeC= new HomeCliente();
-                HomeC.setVisible(true);
-                setVisible(false);
+                if (!email.isEmpty() && !password.isEmpty()) {
+                    campiVuoti.setVisible(false);
+                    System.out.println("email = " + email + " password = " + password);
+                    HomeCliente HomeC = new HomeCliente();
+                    HomeC.setVisible(true);
+                    setVisible(false);
+                }
+                else{
+                    campiVuoti.setVisible(true);
+                }
+
             }
         });
     }

@@ -14,6 +14,7 @@ public class RegistrazioneCliente extends JFrame {
     private JTextField cognomeField;
     private JTextField emailField;
     private JTextField passwordField;
+    private JLabel campiVuoti;
 
     public RegistrazioneCliente(){
         setContentPane(RegistrazionePanel);
@@ -21,6 +22,7 @@ public class RegistrazioneCliente extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(800, 700);
         setLocationRelativeTo(null);
+        campiVuoti.setVisible(false);
         setVisible(true);
         getContentPane().setBackground(new Color(173, 216, 230));
         avantiButton.addActionListener(new ActionListener() {
@@ -28,15 +30,19 @@ public class RegistrazioneCliente extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 //TODO inserire il controllo dei dati
                 String CF = cfField.getText();
-
                 String nome = nomeField.getText();
                 String cognome = cognomeField.getText();
                 String email = emailField.getText();
                 String password = passwordField.getText();
-                System.out.println("CF = " + CF + "\nNome = " + nome + "\nCognome = " + cognome + "\nEmail = " + email + "\nPassword = " + password);
-                RegistrazioneMetodoDiPagamento regM= new RegistrazioneMetodoDiPagamento();
-                regM.setVisible(true);
-                setVisible(false);
+                if(CF.isEmpty()||nome.isEmpty()||cognome.isEmpty()||email.isEmpty()||password.isEmpty()){
+                    campiVuoti.setVisible(true);
+                }
+                else {
+                    System.out.println("CF = " + CF + "\nNome = " + nome + "\nCognome = " + cognome + "\nEmail = " + email + "\nPassword = " + password);
+                    RegistrazioneMetodoDiPagamento regM = new RegistrazioneMetodoDiPagamento();
+                    regM.setVisible(true);
+                    setVisible(false);
+                }
             }
         });
     }
