@@ -13,7 +13,8 @@ public class RegistrazioneMetodoDiPagamento extends JFrame{
     private JTextField limiteTransazioneField;
     private JLabel campiVuoti;
 
-    public RegistrazioneMetodoDiPagamento(){
+
+    public RegistrazioneMetodoDiPagamento(String CF,String nome,String cognome,String email, String password){
         setContentPane(regMpanel);
         setTitle("Aeroporto Lamezia Terme");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -21,6 +22,7 @@ public class RegistrazioneMetodoDiPagamento extends JFrame{
         setLocationRelativeTo(null);
         campiVuoti.setVisible(false);
         setVisible(true);
+
         getContentPane().setBackground(new Color(173, 216, 230));
         registraButton.addActionListener(new ActionListener() {
             @Override
@@ -46,5 +48,7 @@ public class RegistrazioneMetodoDiPagamento extends JFrame{
                 }
             }
         });
+
     }
+
 }
