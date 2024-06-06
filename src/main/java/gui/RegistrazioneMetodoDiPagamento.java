@@ -1,6 +1,6 @@
 package gui;
 
-import apiService.ApiService;
+import main.apiService.ApiService;
 import org.json.JSONException;
 
 import javax.swing.*;

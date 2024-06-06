@@ -1,16 +1,13 @@
-package controller;
+package main.controller;
 
-import entities.MetodoDiPagamento;
-import entities.Passeggero;
+import main.entities.MetodoDiPagamento;
+import main.entities.Passeggero;
+import main.repositories.PasseggeroRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import repositories.PasseggeroRepository;
 
-import javax.swing.text.html.Option;
-import java.util.Collection;
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Optional;
 

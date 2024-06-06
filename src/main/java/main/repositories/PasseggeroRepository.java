@@ -1,6 +1,6 @@
-package repositories;
+package main.repositories;
 
-import entities.Passeggero;
+import main.entities.Passeggero;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

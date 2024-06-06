@@ -1,4 +1,4 @@
-package apiService;
+package main.apiService;
 
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpPost;
